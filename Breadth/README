@@ -1,0 +1,25 @@
+Colab Link: https://colab.research.google.com/drive/1NcQIX962QiMypfxI0GLyrilNcbPlc7bE?usp=sharing
+
+This submission in particular focuses on using a fixed set of features whil exploring the range of models afforded by Machine/Deep Learning.
+-------------------
+
+How to use:
+
+Due to the nature of models being used, I had to shift to colab so that I had enough horsepower to solve the problem with said models.
+
+However, for conveniece, I've also included a Jupyter Notebook export of the same. However if you run into issues regarding versions, I'd request you to run the code on colab.
+
+Jupyter Notebook: Install iPython Jupyter. Execute the cell one by one, or as a whole(shift+enter will execute all cells selected).
+Colab: Much like a Jupyter Notebook, run it cell-by-cell or all at once.
+
+-------------------
+
+This execution focuses on two main aspects: comparison of error values over different models, and visual comparison of trends to make it more human-readable.
+
+For example, even the moving average - which would otherwise be considered an unconvential solution for this kind of problem statement (since multiple real-life past features help in deciding the current trend.) was able to capture some very rough course trends like increase/decrease (ignoring the negative offset which can be tuned and fixed),
+
+General regression was able to take the minute trends into account (again ignoring the offset) but was off in trends (in some iterations it actually performed worse than moving average!).
+
+ARIMA and Prophet models were also considered as options. However, they tended to give roughly linear and erratic results. Hence, LSTM was picked in favour of these two, since stock trading is also a very time-series type of problem.
+
+COLAB link: https://colab.research.google.com/drive/1NcQIX962QiMypfxI0GLyrilNcbPlc7bE?usp=sharing
